@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
+import Banner from "../../Banner"
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
@@ -24,6 +25,13 @@ export const IndexPageTemplate = ({
     <div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
       <section className="section section--gradient">
+        <Banner
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          slot="XXX"
+          format="auto"
+          responsive="true"
+        />
         <div className="container">
           <div className="section">
             <div className="columns">
